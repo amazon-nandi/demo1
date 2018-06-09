@@ -36,5 +36,5 @@ res.send(oJson);
 });
 
 //event emitter
-
-oApp.listen(100);
+const PORT = process.env.PORT || 100;
+oApp.listen(PORT);
