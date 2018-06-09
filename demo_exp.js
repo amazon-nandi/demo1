@@ -11,16 +11,29 @@ oApp.use((req,res,next) =>{
     variable1: 'Demo Server',
     variable2: 'Variable2'
   });
+  // let oJson = {
+  //   po : 1,
+  //   so : 1,
+  //   posnr: 10,
+  // };
+  // res.send(oJson);
+
   next();
 });
-// oApp.get('/',(req,res) => {
-// //  res.send("hi this is test");
-// //load html for response
+oApp.get('/',(req,res) => {
+//  res.send("hi this is test");
+//load html for response
 // res.render('index.hbs',{
 //   variable1: 'Demo Server',
 //   variable2: 'Variable2'
 // });
-// });
+let oJson = {
+  po : 1,
+  so : 1,
+  posnr: 10,
+};
+res.send(oJson);
+});
 
 //event emitter
 
